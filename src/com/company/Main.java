@@ -11,6 +11,8 @@ public class Main {
         System.out.println(raumschiff.getAnzahlDerAliens());
         raumschiff.TomJonesAbspielen();
         System.out.println(raumschiff.getAnzahlDerAliens());
+        raumschiff.Wiederbeleben();
+        System.out.println(raumschiff.getAnzahlDerAliens());
 
         raumschiff.Starten(true);
 

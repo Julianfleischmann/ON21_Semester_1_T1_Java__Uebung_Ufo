@@ -21,8 +21,8 @@ public class Ufo {
         return _anzahlAliens = 0;
     }
 
-    private int Wiederbeleben() {
-        return _startWertDerAliens;
+    public void Wiederbeleben() {
+        _anzahlAliens = _startWertDerAliens;
     }
 
     public int getAnzahlDerAliens(){
