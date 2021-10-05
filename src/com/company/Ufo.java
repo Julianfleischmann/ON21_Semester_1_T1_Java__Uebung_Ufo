@@ -8,15 +8,15 @@ public class Ufo {
     private int _startWertDerAliens;
     private String _turboboost;
 
-    public Ufo(int anzahlAliens, String turboboost){
+    public Ufo(int anzahlAliens){
         _anzahlAliens = anzahlAliens;
-        _turboboost = turboboost;
+//        _turboboost = turboboost;
     }
 
     private void unsichtbarMachen(){
     }
 
-    private int TomJonesAbspielen() {
+    public int TomJonesAbspielen() {
         _startWertDerAliens = _anzahlAliens;
         return _anzahlAliens = 0;
     }
@@ -29,11 +29,20 @@ public class Ufo {
         return _anzahlAliens;
     }
 
-    public boolean Starten(){
-        if (_turboboost == "turboboost"){
-            return true;
-        }else {
-            return false;
+    public void Starten(boolean turboboost) {
+        if (turboboost) {
+            System.out.println("Wir starten im Turboboost");
+            return; // ohne Rückgabewert möglich, wenn boolean.
+        }else{
+            System.out.println("Wir starten normal");
         }
     }
+// Lösung von Julian über den Constructor
+//    public boolean Starten(){
+//        if (_turboboost == "turboboost"){
+//            return true;
+//        }else {
+//            return false;
+//        }
+//    }
 }
